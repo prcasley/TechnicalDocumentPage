@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #333;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  z-index: 1; /* Ensure sidebar is above the main content */
+}
+
+#navbar header {
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#main-doc {
+  margin-left: 200px;
+  padding: 2em;
+}
+
+.main-section {
+  margin-bottom: 2em;
+}
+
+#einstein-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 2em;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: initial; /* Reset z-index for small screens */
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}

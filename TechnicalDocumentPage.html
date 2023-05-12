@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Technical Documentation</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+		body {
+			font-family: 'Roboto', sans-serif;
+			display: flex;
+			margin: 0;
+			padding: 0;
+		}
+
+		#navbar {
+			position: fixed;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 200px;
+			background-color: #333;
+			padding: 1em;
+			display: flex;
+			flex-direction: column;
+			z-index: 1;
+		}
+
+		#navbar header {
+			color: #fff;
+			margin-bottom: 1em;
+		}
+
+		.nav-link {
+			color: #fff;
+			text-decoration: none;
+			margin-bottom: 0.5em;
+		}
+
+		.nav-link:hover {
+			text-decoration: underline;
+		}
+
+		#main-doc {
+			margin-left: 200px;
+			padding: 2em;
+		}
+
+		.main-section {
+			margin-bottom: 2em;
+		}
+
+		#einstein-img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin-top: 2em;
+		}
+
+		@media (max-width: 768px) {
+			#navbar {
+				position: static;
+				width: 100%;
+				height: auto;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				z-index: initial;
+			}
+
+			#main-doc {
+				margin-left: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="navbar">
+		<header>Documentation</header>
+		<a class="nav-link" href="#notes">Notes</a>
+		<a class="nav-link" href="#scales">Scales</a>
+		<a class="nav-link" href="#chords">Chords</a>
+		<a class="nav-link" href="#intervals">Intervals</a>
+		<a class="nav-link" href="#key-signatures">Key Signatures</a>
+	</div>
+	<div id="main-doc">
+		<section id="notes" class="main-section">
+			<h3 style="background: black; color: white">Introduction: Notes</h3>
+			<p>In music theory, notes are the building blocks of music. They represent specific pitches and are written on a musical staff. Here are some key concepts related to notes:</p>
+			<ul>
+				<li>Notes are named after the first seven letters of the alphabet: A, B, C, D, E, F, G</li>
+				<li>Each note can be modified by accidentals, such as sharps (#) or flats (b)</li>
+				<li>Notes can be written on different lines or spaces of the musical staff</li>
+			</ul>
+		</section>
+		<section id="scales" class="main-section">
+			<h3 style="background: black; color: white">Scales</h3>
+			<p>Scales are a series of notes played in ascending or descending order. They form the foundation of melodies and harmonies in music. Here are some important scales:</p>
+			<ul>
+				<li>Major scale - A seven-note scale with a specific pattern of whole steps and half steps</li>
+                <li>Minor scale - A seven-note scale with a different pattern of whole steps and half steps</li>
+				<li>Pentatonic scale - A five-note scale often used in blues and rock music</li>
+			</ul>
+		</section>
+		<section id="chords" class="main-section">
+			<h3 style="background: black; color: white">Chords</h3>
+			<p>Chords are groups of three or more notes played together. They provide harmony and are the basis of chord progressions in music. Here are some common types of chords:</p>
+			<ul>
+				<li>Major chord - Consists of a root note, a major third, and a perfect fifth</li>
+				<li>Minor chord - Consists of a root note, a minor third, and a perfect fifth</li>
+				<li>Seventh chord - Consists of a root note, a major third, a perfect fifth, and a minor seventh</li>
+			</ul>
+		</section>
+		<section id="intervals" class="main-section">
+			<h3 style="background: black; color: white">Intervals</h3>
+			<p>Intervals refer to the distance between two notes. They play a crucial role in music theory and help determine the relationships between different pitches. Here are some common intervals:</p>
+			<ul>
+				<li>Major second - Two notes with a whole-step distance</li>
+				<li>Minor third - Two notes with a distance of three half-steps</li>
+				<li>Perfect fourth - Two notes with a distance of four half-steps</li>
+				<li>Perfect fifth - Two notes with a distance of seven half-steps</li>
+			</ul>
+		</section>
+		<section id="key-signatures" class="main-section">
+			<h3 style="background: black; color: white">Key Signatures</h3>
+			<p>Key signatures are a set of sharps or flats that appear at the beginning of a musical staff to indicate the key of a piece. They provide information about which notes to play as natural, sharp, or flat throughout the composition. Key signatures help determine the tonality and overall sound of a piece of music.</p>
+            <img src="https://hochstein.org/portals/0/Harmonic_series_intervals.jpg" alt="Harmonic Series Intervals" style="max-width: 100%; height: auto;">
+		</section>
+	</div>
+</body>
+</html>
+
